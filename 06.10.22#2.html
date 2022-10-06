@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            #box1{
+                background: url("fire.png");
+                width: 40px;
+                height: 80px;
+                background-repeat: no-repeat;
+                background-position: -34px -28px;
+                position: absolute;
+                animation: anim 1s steps(10) ;
+            }
+            #box2{
+                
+                width: 40px;
+                height: 80px;
+                background-repeat: no-repeat;
+                background-position: -34px -137px;
+                position: absolute;
+                animation: anim2 1s 1s steps(10) ;
+            }
+            @keyframes anim{
+                from{background-position: -34px -28px;}
+                to{ background-position: -625px -28px;}
+            }
+            @keyframes anim2{
+                from{ background: url("fire.png");
+                    background-position: -34px -137px;}
+                to{ background: url("fire.png");
+                    background-position: -625px -137px;}
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="box1"></div>
+        <div id="box2"></div>
+    </body>
+
+</html>
